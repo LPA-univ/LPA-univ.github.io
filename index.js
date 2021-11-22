@@ -5,7 +5,7 @@ var http = require('http');
 // Create a service (the app object is just a callback).
 var app = express();
 
-app.use(express.static('webapp'));  // <-- TODO change to set the app directory 
+app.use(express.static('.'));  // <-- TODO change to set the app directory 
 
 // Create an HTTP service.
 http.createServer(app).listen(8080);
